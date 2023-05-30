@@ -20,8 +20,11 @@ export default createStore({
   getters: {
   },
   mutations: {
-    setplayList(state,value){  //定义一个函数用来修改state中播放列表的数据
+    setPlayList(state,value){  //定义一个函数用来修改state中播放列表的数据
       state.playlist = value;
+    },
+    setPlayIndex(state,value){  //定义一个函数用来修改state中播放列表的数据
+      state.playCurrentIndex = value;
     }
   },
   actions: {
